@@ -29,10 +29,6 @@ Salinan kode form juga tersedia di repositori pada `soal-3_web-audit/3.1a_gemini
 | 1. Desain Arsitektur Data, Normalisasi, dan Asas Berpasangan | 25% | CPMK-1 | [`soal-1_desain-data/`](soal-1_desain-data) | ERD, DDL dan constraint, analisis 3NF dan audit trail |
 | 2. Otomasi Bisnis, Stored Procedure, dan Trigger Persediaan | 40% | CPMK-2 | [`soal-2_trigger-persediaan/`](soal-2_trigger-persediaan) | Trigger stok dan jurnal HPP, penanganan concurrency |
 | 3. Purwarupa Web Full-Stack dan Orkestrasi AI Tools | 35% | CPMK-3 | [`soal-3_web-audit/`](soal-3_web-audit) | Form voucher, verifikasi PSAK, audit trail dan immutability |
-| Dokumentasi penggunaan AI | | | [`prompt-log/`](prompt-log) | Log prompt, template prompt, pernyataan penggunaan AI |
-| Bukti eksekusi | | | [`bukti/`](bukti) | Screenshot hasil di sandbox dan alat AI |
-
-Daftar periksa per butir soal ada di [`CHECKLIST.md`](CHECKLIST.md).
 
 ## Struktur Repositori
 ```
