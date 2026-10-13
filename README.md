@@ -9,6 +9,7 @@ Sifat ujian: Open Book / Open AI / Open Code Sandbox
 | Nama | Naylla Dea Navanda |
 | NIM | 12030124130124 |
 | Tautan repositori | https://github.com/nayeylladea-cmd/UTSPemrogramanE.git |
+| Tautan GDrive |  https://drive.google.com/drive/folders/1k5xFzxTI1kCQlpMyaioMBq2-EqhkcPmy?usp=drive_link |
 
 ## Latar Belakang
 
@@ -19,8 +20,8 @@ Sistem informasi akuntansi sebuah perusahaan ritel hanya memvalidasi keseimbanga
 | Demo | Tautan |
 | --- | --- |
 | Form Voucher Kas Keluar dengan Live Balanced Indicator (Gemini Canvas) | https://share.gemini.google/bMv9b9aO8ZKH |
+| Bukti eksekusi (screenshot hasil di alat AI) | https://drive.google.com/drive/folders/1k5xFzxTI1kCQlpMyaioMBq2-EqhkcPmy?usp=drive_link |
 
-Salinan kode form juga tersedia di repositori pada `soal-3_web-audit/3.1a_gemini-canvas/index.html` dan dapat dibuka langsung di browser.
 
 ## Ringkasan Soal dan Artefak
 
@@ -118,7 +119,7 @@ erDiagram
 
 ## Dokumentasi Penggunaan AI
 
-Ujian ini bersifat Open AI. Seluruh penggunaan alat AI dicatat di [`prompt-log/`](prompt-log), berisi prompt, ringkasan hasil, artefak terkait, dan langkah verifikasi:
+Ujian ini bersifat Open AI. Dokumentasi prompt dan hasil dari alat AI yang digunakan:
 
-- [`soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md`](soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md): log prompt Gemini Canvas
+- [`soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md`](soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md): prompt Gemini Canvas
 - [`soal-3_web-audit/3.1b_notebooklm/verifikasi_psak.md`](soal-3_web-audit/3.1b_notebooklm/verifikasi_psak.md): hasil verifikasi NotebookLM
