@@ -6,9 +6,9 @@ Sifat ujian: Open Book / Open AI / Open Code Sandbox
 
 | Identitas | |
 | --- | --- |
-| Nama | ____________ |
-| NIM | ____________ |
-| Tautan repositori | ____________ |
+| Nama | Naylla Dea Navanda |
+| NIM | 12030124130124 |
+| Tautan repositori | https://github.com/nayeylladea-cmd/UTSPemrogramanE.git |
 
 ## Latar Belakang
 
@@ -35,11 +35,9 @@ Salinan kode form juga tersedia di repositori pada `soal-3_web-audit/3.1a_gemini
 Daftar periksa per butir soal ada di [`CHECKLIST.md`](CHECKLIST.md).
 
 ## Struktur Repositori
-
 ```
 .
 ├── README.md
-├── CHECKLIST.md
 ├── soal-1_desain-data/
 │   ├── 1.1_erd/                 erd.mmd, erd.dbml
 │   ├── 1.2_ddl/                 01_ddl.sql, 02_trigger_keseimbangan.sql, 03_data_dan_tes.sql
@@ -47,12 +45,11 @@ Daftar periksa per butir soal ada di [`CHECKLIST.md`](CHECKLIST.md).
 ├── soal-2_trigger-persediaan/
 │   ├── 2.1_trigger/             01_ddl_tabel.sql, 02_fungsi_dan_trigger.sql, 03_tes.sql
 │   └── 2.2_concurrency/         concurrency.md, concurrency.sql
-├── soal-3_web-audit/
-│   ├── 3.1a_gemini-canvas/      index.html, prompt_gemini.md
-│   ├── 3.1b_notebooklm/         verifikasi_psak.md
-│   └── 3.2_audit-trail/         01 sampai 05 (*.sql), spesifikasi_backend.md
-├── prompt-log/                  prompt_log_claude.md, template_prompt_terstruktur.md
-└── bukti/                       soal-1/, soal-2/, soal-3/
+└── soal-3_web-audit/
+    ├── 3.1a_gemini-canvas/      index.html, prompt_gemini.md
+    ├── 3.1b_notebooklm/         verifikasi_psak.md
+    └── 3.2_audit-trail/         01_kolom_audit.sql, 02_immutability.sql,
+                                 03_hash_dan_posting.sql, 04_jurnal_pembalik.sql, 05_tes.sql
 ```
 
 ## Ringkasan Solusi
@@ -120,7 +117,6 @@ erDiagram
 | Basis data dan eksekusi SQL | PostgreSQL Sandbox / Supabase |
 | Prototipe form voucher | Gemini Canvas |
 | Verifikasi kepatuhan PSAK | NotebookLM |
-| Asisten penyusunan jawaban | Claude (Anthropic) |
 | Diagram ERD | mermaid.live, dbdiagram.io |
 | Penyimpanan dan dokumentasi | GitHub |
 
@@ -128,7 +124,5 @@ erDiagram
 
 Ujian ini bersifat Open AI. Seluruh penggunaan alat AI dicatat di [`prompt-log/`](prompt-log), berisi prompt, ringkasan hasil, artefak terkait, dan langkah verifikasi:
 
-- [`prompt-log/prompt_log_claude.md`](prompt-log/prompt_log_claude.md): log prompt Claude beserta pernyataan penggunaan AI
 - [`soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md`](soal-3_web-audit/3.1a_gemini-canvas/prompt_gemini.md): log prompt Gemini Canvas
 - [`soal-3_web-audit/3.1b_notebooklm/verifikasi_psak.md`](soal-3_web-audit/3.1b_notebooklm/verifikasi_psak.md): hasil verifikasi NotebookLM
-- [`prompt-log/template_prompt_terstruktur.md`](prompt-log/template_prompt_terstruktur.md): template prompt (Peran, Konteks, Tugas, Format, Batasan)
