@@ -1,0 +1,27 @@
+erDiagram
+    chart_of_accounts ||--o{ journal_lines : "dipakai pada"
+    journal_headers ||--|{ journal_lines : "memiliki"
+
+    chart_of_accounts {
+        int account_id PK
+        varchar account_code UK "kode akun"
+        varchar account_name "nama akun"
+        char normal_balance "D atau K"
+        varchar report_class "NERACA atau LABA_RUGI"
+    }
+
+    journal_headers {
+        bigint header_id PK
+        date trx_date "tanggal transaksi"
+        varchar ref_no UK "nomor bukti"
+        text description
+        varchar posting_status "DRAFT atau POSTED"
+    }
+
+    journal_lines {
+        bigint line_id PK
+        bigint header_id FK
+        int account_id FK
+        numeric debit
+        numeric credit
+    }

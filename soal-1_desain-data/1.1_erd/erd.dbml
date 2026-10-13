@@ -1,0 +1,26 @@
+Table chart_of_accounts {
+  account_id int [pk, increment]
+  account_code varchar(20) [unique, not null]
+  account_name varchar(150) [not null]
+  normal_balance char(1) [not null, note: 'D atau K']
+  report_class varchar(20) [not null, note: 'NERACA atau LABA_RUGI']
+}
+
+Table journal_headers {
+  header_id bigint [pk, increment]
+  trx_date date [not null]
+  ref_no varchar(50) [unique, not null]
+  description text [not null]
+  posting_status varchar(10) [not null, default: 'DRAFT', note: 'DRAFT atau POSTED']
+}
+
+Table journal_lines {
+  line_id bigint [pk, increment]
+  header_id bigint [not null]
+  account_id int [not null]
+  debit numeric(18,2) [not null, default: 0]
+  credit numeric(18,2) [not null, default: 0]
+}
+
+Ref: journal_lines.header_id > journal_headers.header_id
+Ref: journal_lines.account_id > chart_of_accounts.account_id
